@@ -1,0 +1,20 @@
+{
+   "launchScreen": "A",
+   "storyboard": {
+      "A" : {
+         "linkToScreens": ["B"],
+         "message": "You are in a maze of twisty little passages, all alike",
+         "messageColor": "#FF0000"
+      },
+      "B": {
+         "linkToScreens": ["C"],
+         "message": "You find yourself in a dark hallway. Is that a door?",
+         "messageColor": "#00FF00"
+      },
+      "C": {
+         "linkToScreens": ["A","B"],
+         "message": "You find yourself at a fork in the road.",
+         "messageColor": "#0000FF"
+      }
+   }
+}

@@ -1,0 +1,11 @@
+<meta-app-container>
+  <h2 class="title">{{Meta.title}}</h2>
+
+  <h3 ng-style="{color: Meta.messageColor}">{{Meta.message}}</h3>
+  <span ng-if="Meta.mode !== 'maintenance'">You've got choices:<br></span>
+  <br>
+  <div ng-repeat="linkToScreen in Meta.linkToScreens">
+  <button ui-sref="meta({screen: linkToScreen})">Go to screen: {{linkToScreen}}</button>
+  </div>
+
+</meta-app-container>
